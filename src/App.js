@@ -19,8 +19,6 @@ const App = () => {
           <Route path="/news"  />
           <Route path="/music"  />
           <Route path="/settings"  />
-          {/* <Profile /> */}
-          {/* <Dialogs /> */}
         </main>      
       </div>
     </BrowserRouter>
