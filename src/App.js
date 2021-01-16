@@ -7,15 +7,20 @@ import Header from './components/Header';
 import Navbar from './components/Navbar';
 import Dialogs from './components/Dialogs';
 
-const App = () => {
+const App = (props) => {
+  
   return (
     <BrowserRouter>
       <div className="app-wrapper">
         <Header />
         <Navbar />
         <main className="content">
-          <Route path="/profile" component={Profile} />
-          <Route path="/dialogs" component={Dialogs} />
+          <Route path="/profile" 
+            render={ () => <Profile 
+              state={props.state.profilePage} /> } />
+          <Route path="/dialogs" 
+            render={ () => <Dialogs 
+              state={props.state.dialogsPage} /> } />
           <Route path="/news"  />
           <Route path="/music"  />
           <Route path="/settings"  />
