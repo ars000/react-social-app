@@ -1,3 +1,4 @@
+// My text
 import React from 'react';
 import logo from './../logo.svg';
 import {createUseStyles} from 'react-jss';
